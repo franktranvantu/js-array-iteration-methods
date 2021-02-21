@@ -1,10 +1,5 @@
-// Use the map method on the daysOfWeek array, creating a new array of abbreviated week days.
-// Each abbreviated string should be the first three letters of the long version in daysOfWeek.
-// Store the new array in the variable abbreviatedDays.
+const prices = [6.75, 3.10, 4.00, 8.12]; // Total: 21.97
 
-const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-let abbreviatedDays;
+let total = prices.reduce((acc, cur) => acc + cur, 0);
 
-// abbreviatedDays should be: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
-// Write your code below
-abbreviatedDays = daysOfWeek.map(day => day.substring(0, 3));
+console.log(total);

@@ -1,1 +1,1 @@
-The filter method can be used to remove elements from an array.
+Use the reduce method to return a single value from an array of values.
