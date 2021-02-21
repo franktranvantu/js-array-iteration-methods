@@ -1,3 +1,5 @@
-Learn how to access and transform data in arrays with JavaScript's array iteration methods. 
+It's important to able to look through an array to see what it holds. 
 
-You'll learn how, why and when to use these powerful methods to make your code easier to read and more concise.
+This video covers two ways of doing this: the for loop, and the forEach method. 
+
+We'll compare and contrast the two techniques.
