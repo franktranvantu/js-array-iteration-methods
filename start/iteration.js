@@ -1,7 +1,14 @@
-const movies = [
-  ['The Day the Earth Stood Still', 'Superman', 'Ghostbusters'],
-  ['Finding Dory'],
-  ['Jaws', 'On the Waterfront']
-]
+// Using reduce method, flatten the customerNames array of arrays.
+// In other words, take all the names from each array inside customerNames and place them in one big array.
+// Store the flattened array in the flattenedCustomerNames variable.
+// You can use the array in the comments below for reference.
 
-// Result: ['The Day the Earth Stood Still', 'Superman', 'Ghostbusters', 'Finding Dory', 'Jaws', 'On the Waterfront']
+const customerNames = [
+  [ "John", "Sandy", "Tyrone", "Elizabeth", "Penny" ],
+  [ "Barry", "Wanda", "Jamal", "Hayden" ],
+  [ "Portia", "Pam", "Philip" ]
+];
+let flattenedCustomerNames;
+
+// flattenedCustomerNames should be: ["John", "Sandy", "Tyrone", "Elizabeth", "Penny", "Barry", "Wanda", "Jamal", "Hayden", "Portia", "Pam", "Philip"]
+// Write your code below
