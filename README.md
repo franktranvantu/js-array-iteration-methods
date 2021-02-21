@@ -1,3 +1,3 @@
-Because the map method returns an array, you can call another array method directly after it. The same is true for the filter method. 
+As a JavaScript developer, you'll often work with arrays of objects. 
 
-This is commonly called chaining methods, because each call is like a link in a chain.
+Get some practice using the methods you've learned with arrays of objects.
