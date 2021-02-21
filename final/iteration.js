@@ -1,5 +1,3 @@
-const names = ['Selma', 'Ted', 'Mike', 'Sam', 'Sharon', 'Marvin'];
-const startsWithS = name => name.charAt(0) === 'S';
-const sNames = names.filter(startsWithS);
-
-console.log(sNames);
+const strings = ['1','2','3','4','5'];
+const numbers = strings.map(string => parseInt(string));
+console.log(numbers);

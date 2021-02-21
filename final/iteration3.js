@@ -1,3 +1,4 @@
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const evens = numbers.filter(number => number % 2 === 0);
-console.log(evens);
+const prices = [5, 4.23, 6.4, 8.09, 3.20]; // Result: [ '$5.00', '$4.23', '$6.40', '$8.09', '$3.20' ]
+const priceToDollars = price => `$${price.toFixed(2)}`;
+const displayPrices = prices.map(priceToDollars);
+console.log(displayPrices);
