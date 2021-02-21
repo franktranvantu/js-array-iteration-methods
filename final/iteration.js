@@ -1,17 +1,11 @@
-// Using the map method on the authors array, create an array of full name strings, comprising the first name, then a space, then the last name.
-// See the comments below for reference.
-// Store the new array in the fullAuthorNames variable.
+const userNames = ['Samir', 'Angela', 'Beatrice', 'Shaniqua', 'Marvin', 'Sean'];
+// Result: [{name: 'Samir'}, {name: 'Shaniqua'}, {name:'Sean'}];
 
-const authors = [
-  { firstName: "Beatrix", lastName: "Potter" },
-  { firstName: "Ann", lastName: "Martin" },
-  { firstName: "Beverly", lastName: "Cleary" },
-  { firstName: "Roald", lastName: "Dahl" },
-  { firstName: "Lewis", lastName: "Carroll" }
-];
-let fullAuthorNames;
-
-// fullAuthorNames should be: ["Beatrix Potter", "Ann Martin", "Beverly Cleary", "Roald Dahl", "Lewis Carroll"]
-// Write your code below
-fullAuthorNames = authors.map(author => `${author.firstName} ${author.lastName}`);
-console.log(authors);
+const userStartsWithS = userNames
+  .filter(userName => userName.charAt(0) === 'S')
+  .map(userName => {
+    return {
+      name: userName
+    }
+  });
+console.log(userStartsWithS);

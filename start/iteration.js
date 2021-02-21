@@ -1,15 +1,12 @@
-// Using the map method on the authors array, create an array of full name strings, comprising the first name, then a space, then the last name.
-// See the comments below for reference.
-// Store the new array in the fullAuthorNames variable.
+const userNames = ['Samir', 'Angela', 'Beatrice', 'Shaniqua', 'Marvin', 'Sean'];
+// Result: [{name: 'Samir'}, {name: 'Shaniqua'}, {name:'Sean'}]; user name starts with S
 
-const authors = [
-  { firstName: "Beatrix", lastName: "Potter" },
-  { firstName: "Ann", lastName: "Martin" },
-  { firstName: "Beverly", lastName: "Cleary" },
-  { firstName: "Roald", lastName: "Dahl" },
-  { firstName: "Lewis", lastName: "Carroll" }
+const users = [
+  {name: 'Samir', age: 27},
+  {name: 'Angela', age: 33},
+  {name: 'Beatrice', age: 42},
+  {name: 'Shaniqua', age: 30},
+  {name: 'Marvin', age: 23},
+  {name: 'Sean', age: 47}
 ];
-let fullAuthorNames;
-
-// fullAuthorNames should be: ["Beatrix Potter", "Ann Martin", "Beverly Cleary", "Roald Dahl", "Lewis Carroll"]
-// Write your code below
+// Result: ['Angela', 'Beatrice', 'Shaniqua', 'Sean']; age is older than or equals 30

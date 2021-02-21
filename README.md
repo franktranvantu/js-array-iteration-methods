@@ -1,3 +1,3 @@
-As a JavaScript developer, you'll often work with arrays of objects. 
+You can combine filter() and map() to clean an array of unwanted values before transforming the leftover items. 
 
-Get some practice using the methods you've learned with arrays of objects.
+Work some examples in this video.
