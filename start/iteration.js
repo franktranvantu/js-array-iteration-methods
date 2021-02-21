@@ -1,14 +1,32 @@
-// Using reduce method, flatten the customerNames array of arrays.
-// In other words, take all the names from each array inside customerNames and place them in one big array.
-// Store the flattened array in the flattenedCustomerNames variable.
-// You can use the array in the comments below for reference.
+// Using the reduce method, extract all the customer hobbies into their own array.
+// Store the hobbies in the hobbies array.
+// You can use the comments below for reference.
 
-const customerNames = [
-  [ "John", "Sandy", "Tyrone", "Elizabeth", "Penny" ],
-  [ "Barry", "Wanda", "Jamal", "Hayden" ],
-  [ "Portia", "Pam", "Philip" ]
+const customers = [
+  {
+    name: "Tyrone",
+    personal: {
+      age: 33,
+      hobbies: ["Bicycling", "Camping"]
+    }
+  },
+  {
+    name: "Elizabeth",
+    personal: {
+      age: 25,
+      hobbies: ["Guitar", "Reading", "Gardening"]
+    }
+  },
+  {
+    name: "Penny",
+    personal: {
+      age: 36,
+      hobbies: ["Comics", "Chess", "Legos"]
+    }
+  }
 ];
-let flattenedCustomerNames;
+let hobbies;
 
-// flattenedCustomerNames should be: ["John", "Sandy", "Tyrone", "Elizabeth", "Penny", "Barry", "Wanda", "Jamal", "Hayden", "Portia", "Pam", "Philip"]
+// hobbies should be: ["Bicycling", "Camping", "Guitar", "Reading", "Gardening", "Comics", "Chess", "Legos"]
 // Write your code below
+
