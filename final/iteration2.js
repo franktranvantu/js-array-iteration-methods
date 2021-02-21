@@ -1,6 +1,3 @@
-const prices = [6.75, 3.10, 4.00, 8.12]; // Total: 21.97
-
-let total = 0;
-prices.forEach(price => total += price);
-
-console.log(total);
+const numbers = [1, 2, 3, 4, 5];
+const no3 = numbers.filter(number => number !== 3);
+console.log(no3)

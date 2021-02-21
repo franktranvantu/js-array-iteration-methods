@@ -1,9 +1,5 @@
-const fruits = ['apple', 'pear', 'cherry'];
-const capitalizedFruits = [];
+const names = ['Selma', 'Ted', 'Mike', 'Sam', 'Sharon', 'Marvin'];
+const startsWithS = name => name.charAt(0) === 'S';
+const sNames = names.filter(startsWithS);
 
-fruits.forEach(fruit => {
-  const capitalizedFruit = fruit.toUpperCase();
-  capitalizedFruits.push(capitalizedFruit);
-})
-
-console.log(capitalizedFruits);
+console.log(sNames);

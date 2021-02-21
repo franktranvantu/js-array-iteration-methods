@@ -1,7 +1,10 @@
-const fruits = ['apple', 'pear', 'cherry'];
+const names = ['Selma', 'Ted', 'Mike', 'Sam', 'Sharon', 'Marvin'];
+const sNames = [];
 
-for (let i = 0; i < fruits.length; i++) {
-  console.log(fruits[i]);
-}
+names.forEach(name => {
+  if (name.charAt(0) === 'S') {
+    sNames.push(name);
+  }
+});
 
-fruits.forEach(fruit => console.log(fruit));
+console.log(sNames);
