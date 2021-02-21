@@ -1,34 +1,20 @@
-// Using the filter and map methods on the todos array, create an array of unfinished task strings.
-// See the comments below to see the correct result.
-// Store the new array in the variable unfinishedTasks.
-
-const todos = [
-  {
-    todo: 'Buy apples',
-    done: false
-  },
-  {
-    todo: 'Wash car',
-    done: true
-  },
-  {
-    todo: 'Write web app',
-    done: false
-  },
-  {
-    todo: 'Read MDN page on JavaScript arrays',
-    done: true
-  },
-  {
-    todo: 'Call mom',
-    done: false
-  }
+const products = [
+  { name: 'hard drive', price: 59.99 },
+  { name: 'lighbulbs', price: 2.59 },
+  { name: 'paper towels', price: 6.99 },
+  { name: 'flatscreen monitor', price: 159.99 },
+  { name: 'cable ties', price: 19.99 },
+  { name: 'ballpoint pens', price: 4.49 }
 ];
-let unfinishedTasks;
+// Finds the highest price of all products under $10
+// Result: { name: 'paper towels', price: 6.99 }
 
-// unfinishedTasks should be: ["Buy apples", "Write web app", "Call mom"]
-// Write your code below
-unfinishedTasks = todos
-  .filter(todo => !todo.done)
-  .map(todo => todo.todo);
-console.log(unfinishedTasks);
+const paperTowels = products
+  .filter(product => product.price < 10)
+  .reduce((highest, product) => {
+    if (highest.price < product.price) {
+      return highest;
+    }
+    return product;
+  }, {});
+console.log(paperTowels);

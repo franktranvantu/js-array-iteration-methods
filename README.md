@@ -1,3 +1,3 @@
-You can combine filter() and map() to clean an array of unwanted values before transforming the leftover items. 
+Combining filter() with reduce(), you can remove values from an array, using the results to compute some value. 
 
-Work some examples in this video.
+Get some practice with this combination.

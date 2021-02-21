@@ -6,5 +6,11 @@ const products = [
   { name: 'cable ties', price: 19.99 },
   { name: 'ballpoint pens', price: 4.49 }
 ];
+// Calculate total of all products over $10
+// Result: 239.97
 
-// Result: { name: 'paper towels', price: 6.99 }
+const total = products
+  .filter(product => product.price > 10)
+  .reduce((total, product) => total + product.price, 0)
+  .toFixed(2);
+console.log(total);
